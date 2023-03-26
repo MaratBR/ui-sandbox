@@ -1,0 +1,40 @@
+.layout {
+  position: relative;
+  padding-top: var(--header-height);
+  padding-left: var(--side-width);
+  border: 2px solid red;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.header {
+  height: var(--header-height);
+  left: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+  background-color: blueviolet;
+  padding-left: var(--side-width);
+}
+
+.sideSection {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: var(--side-width);
+  position: absolute;
+  box-shadow: 0 0 0 2px black inset;
+}
+
+.sideSection .title {
+  height: var(--header-height);
+}
+
+.sideSection .groups {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.body {
+}

@@ -1,0 +1,16 @@
+.grid {
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.cellContainer {
+  position: relative;
+  height: calc(var(--row-height) * var(--row-count));
+  width: calc(var(--pixels-per-minute) * var(--total-duration));
+}
+
+.cell {
+  position: absolute;
+  top: calc(var(--row-height) * var(--group-index));
+  left: calc((var(--ts) - var(--from-ts)) * var(--seconds-to-pixels));
+}

@@ -1,0 +1,29 @@
+.gridOuter {
+  height: calc(var(--row-count) * var(--row-height) + 2px);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.gridInner {
+  width: calc(var(--total-duration) * var(--pixels-per-minute));
+  overflow: hidden;
+  height: fit-content;
+  position: relative;
+}
+
+.gridTable {
+  border-collapse: collapse;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(calc(var(--relative-offset) * var(--cell-width)));
+}
+
+.gridTable td {
+  height: var(--cell-height);
+  width: var(--cell-width);
+  min-width: var(--cell-width);
+  position: relative;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
